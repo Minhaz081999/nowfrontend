@@ -37,7 +37,7 @@ const AddSalary = () => {
         e.preventDefault()
 
         try {
-            const response = await axios.post(`https://ems-api-vert.vercel.app/api/salary/add`, salary, {
+            const response = await axios.post(`https://nowbackend.vercel.app/api/salary/add`, salary, {
               headers: {
                 "Authorization": `Bearer ${localStorage.getItem('token')}`
               }

@@ -13,7 +13,7 @@ const Login = () => {
     const handleSubmit = async (e)=>{
         e.preventDefault();
         try{                                  // eta backend vercel er domain
-            const response = await axios.post("https://ems-api-vert.vercel.app/api/auth/login", {email, password});
+            const response = await axios.post("https://nowbackend.vercel.app/api/auth/login", {email, password});
             
             if(response.data.success){
                 setError(null);

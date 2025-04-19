@@ -21,7 +21,7 @@ const SalaryTable = () => {
     useEffect(()=>{
         const fetchSalaries = async () => {
             try{
-                const response = await axios.get('https://ems-api-vert.vercel.app/api/salary', {
+                const response = await axios.get('https://nowbackend.vercel.app/api/salary', {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem('token')}`
                     }
