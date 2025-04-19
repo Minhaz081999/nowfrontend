@@ -13,7 +13,7 @@ const LeaveTable = () => {
       try{
         const response = await axios.get('https://nowbackend.vercel.app/api/leave', {
             headers: {
-                "Authorization" : `Bearer ${localStorage.getItem('token')}`
+                Authorization : `Bearer ${localStorage.getItem('token')}`
             }
         })
 

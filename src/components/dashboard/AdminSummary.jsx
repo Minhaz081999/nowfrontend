@@ -11,7 +11,7 @@ const AdminSummary = () => {
       try {
         const summary = await axios.get('https://nowbackend.vercel.app/api/dashboard/summary', {
           headers: {
-            "Authorization" : `Bearer ${localStorage.getItem('token')}` 
+            Authorization : `Bearer ${localStorage.getItem('token')}` 
           }
         })
 

@@ -37,7 +37,7 @@ const AddEmployee = () => {
         try {
             const response = await axios.post('https://nowbackend.vercel.app/api/employee/add', formDataObj, {
               headers: {
-                "Authorization": `Bearer ${localStorage.getItem('token')}`
+                Authorization: `Bearer ${localStorage.getItem('token')}`
               }
           })
     

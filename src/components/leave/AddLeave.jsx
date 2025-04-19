@@ -29,7 +29,7 @@ const AddLeave = () => {
         try{
             const response = await axios.post(`https://nowbackend.vercel.app/api/leave/add`, leave, {
                 headers: {
-                    "Authorization" : `Bearer ${localStorage.getItem('token')}`
+                    Authorization : `Bearer ${localStorage.getItem('token')}`
                 }
             })
 

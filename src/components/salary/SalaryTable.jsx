@@ -23,7 +23,7 @@ const SalaryTable = () => {
             try{
                 const response = await axios.get('https://nowbackend.vercel.app/api/salary', {
                     headers: {
-                        "Authorization": `Bearer ${localStorage.getItem('token')}`
+                        Authorization: `Bearer ${localStorage.getItem('token')}`
                     }
                 })
                 if(response.data.success){

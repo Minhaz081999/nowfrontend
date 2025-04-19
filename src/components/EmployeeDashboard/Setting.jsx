@@ -32,7 +32,7 @@ const Setting = () => {
             try{
                 const response = await axios.put('https://nowbackend.vercel.app/api/setting/change-password', setting, {
                     headers: {
-                        'Authorization': `Bearer ${localStorage.getItem('token')}`
+                        Authorization: `Bearer ${localStorage.getItem('token')}`
                     },
                 });
                 if(response.data.success){

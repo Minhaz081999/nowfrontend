@@ -18,7 +18,7 @@ const EditDepartment = () => {
         try {
             const response = await axios.put(`https://nowbackend.vercel.app/api/department/${id}`, department, {
                 headers: {
-                "Authorization": `Bearer ${localStorage.getItem('token')}`
+                Authorization: `Bearer ${localStorage.getItem('token')}`
                 }
             })
             console.log(response)
@@ -39,7 +39,7 @@ const EditDepartment = () => {
             try{
                 const response = await axios.get(`https://nowbackend.vercel.app/api/department/${id}`, {
                     headers: {
-                        "Authorization" : `Bearer ${localStorage.getItem('token')}`
+                        Authorization : `Bearer ${localStorage.getItem('token')}`
                     }
                 })
 

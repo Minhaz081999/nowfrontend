@@ -14,7 +14,7 @@ const authContext = ({children}) => {
           if(token){
             const response = await axios.get('https://nowbackend.vercel.app/api/auth/verify', {
               headers: {
-                "Authorization": `Bearer ${token}`
+                Authorization: `Bearer ${token}`
               }
             })
             

@@ -27,7 +27,7 @@ export const DepartmentBottons = ({_id, onDepartmentDelete})=> {
             try{
                 const response = await axios.delete(`https://nowbackend.vercel.app/api/department/${id}`, {
                     headers: {
-                        "Authorization" : `Bearer ${localStorage.getItem('token')}`
+                        Authorization : `Bearer ${localStorage.getItem('token')}`
                     }
                 })
     

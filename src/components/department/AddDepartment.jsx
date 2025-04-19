@@ -19,7 +19,7 @@ const AddDepartment = () => {
       try {
         const response = await axios.post('https://nowbackend.vercel.app/api/department/add', department, {
           headers: {
-            "Authorization": `Bearer ${localStorage.getItem('token')}`
+            Authorization: `Bearer ${localStorage.getItem('token')}`
           }
       })
 

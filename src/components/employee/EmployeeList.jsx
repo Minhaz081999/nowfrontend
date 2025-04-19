@@ -15,7 +15,7 @@ const EmployeeList = () => {
           try{
               const response = await axios.get('https://nowbackend.vercel.app/api/employee', {
                   headers: {
-                      "Authorization" : `Bearer ${localStorage.getItem('token')}`
+                      Authorization : `Bearer ${localStorage.getItem('token')}`
                   }
               })
 
